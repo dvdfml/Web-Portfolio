@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(49, 52, 61);
     --secondary-color: rgb(146, 204, 205);
+    --heading-color: rgb(68, 88, 118)
 }
 
 header {
@@ -40,4 +41,28 @@ nav ul li {
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+section {
+    display: flex;
+    margin: 2rem;
+}
+
+section>* {
+    padding: 0rem 1rem;
+}
+
+section h2 {
+    text-align: right;
+    font-size: 300%;
+    color: var(--heading-color);
+    min-width: 30%;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    border-right: solid 4px;
+}
+
+.deployed-applications {
+    display: flex;
+    justify-content: center;
 }
