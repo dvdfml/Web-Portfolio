@@ -1,0 +1,43 @@
+:root {
+    --primary-color: rgb(49, 52, 61);
+    --secondary-color: rgb(146, 204, 205);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+}
+
+header h1 {
+    font-size: 300%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.5rem 0rem 2.5rem;
+    height: 60px;
+}
+
+nav {
+    margin-right: 2%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-size: 110%;
+    border-bottom: solid var(--secondary-color) 3px;
+    margin: 5px;
+    padding: 0.2rem 0.5rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
