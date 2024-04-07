@@ -6,20 +6,18 @@
 
 header {
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     height: 80px;
+}
+
+main {
+    width: 100%;
 }
 
 header h1 {
     font-size: 300%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    padding: 0rem 0.5rem 0rem 2.5rem;
+    padding: 0.5rem 0.5rem 0 2.5rem;
     height: 60px;
 }
 
@@ -46,10 +44,8 @@ nav a {
 section {
     display: flex;
     margin: 2rem;
-}
-
-section>* {
-    padding: 0rem 1rem;
+    max-width: 3000px;
+    margin: 2rem auto;
 }
 
 section h2 {
@@ -57,12 +53,77 @@ section h2 {
     font-size: 300%;
     color: var(--heading-color);
     min-width: 30%;
+    max-width: 30%;
     padding-right: 2rem;
     margin-right: 1rem;
     border-right: solid 4px;
 }
 
+section p {
+    padding: 0rem 0.5rem
+}
+
+section ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 120%;
+    padding: 0rem 0.5rem
+}
+
+section div div img {
+    border: solid var(--secondary-color) 3px;
+    width: 100%;
+}
+
+section ul li {
+    border-bottom: solid var(--heading-color);
+    padding: 0.2rem 0.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .deployed-applications {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0rem 0.5rem;
+}
+
+.image-card {
+    margin-top: 2%;
+    position: relative;
+    width: 49%;
+}
+
+.image-title {
+    position: absolute;
+    bottom: 1.5rem;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    background-color: var(--secondary-color);
+}
+
+.image-subheader {
+    font-size: 70%;
+}
+
+#inner-header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 3000px;
+    height: 80px;
+    margin: auto;
+}
+
+#main-app {
+    width: 100%;
+    margin-top: 0;
 }
