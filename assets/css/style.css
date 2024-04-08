@@ -87,6 +87,11 @@ a {
     color: black;
 }
 
+section img {
+    object-fit: cover;
+    height: 150px;
+}
+
 .deployed-applications {
     display: flex;
     justify-content: space-between;
@@ -102,13 +107,14 @@ a {
 
 .image-title {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1rem;
     padding: 0.5rem;
     line-height: 1.5rem;
     background-color: var(--secondary-color);
+    font-size: 120%;
 }
 
-.image-subheader {
+.image-subtitle {
     font-size: 70%;
 }
 
@@ -123,7 +129,33 @@ a {
     margin: auto;
 }
 
+#subtitle {
+    width: 100%;
+    max-width: 3000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#subtitle img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#subtitle h2 {
+    font-size: 200%;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2.5rem;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
 #main-app {
     width: 100%;
     margin-top: 0;
+}
+
+#main-app img {
+    height: 450px;
 }
